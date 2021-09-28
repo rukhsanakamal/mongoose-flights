@@ -13,6 +13,7 @@ const flightSchema = new Schema({
     airport : String,
     departs: Date, 
     destinations: [destinationSchema]
+
     
   });
 
