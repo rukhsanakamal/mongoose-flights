@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<ul>
+  <% flightArray.forEach(function (f) { %>
+    <div>
+     <h2>Flight Number <%= f.flightNo %> </h2> 
+     <h3>
+       Airline: <%= f.airline %> 
+       <br>
+       Leaving: <%= f.airport %> 
+       <br>
+       Date: <%= f.departs %> 
+       <a href="/flights/<%= f._id %>">Details</a>
+     </h3>
+    </div>
+ <% });%>
+</ul>
+
+
+<%- include('../partials/footer') %>
